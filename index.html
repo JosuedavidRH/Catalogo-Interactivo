@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones Circulares</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="mensaje-bienvenida">Bienvenido 1105 apto</h1>
+        
+
+        <!-- Botón para desbloquear imagen en otra página -->
+        <button id="btn-desbloquear-imagen" class="btn btn-desbloquear"></button>
+
+        <!-- Botón de comprar (deshabilitado por defecto) -->
+        <button id="btn-comprar" class="btn btn-comprar" disabled>Comprar</button>
+
+        <!-- Botón para mostrar el precio en tienda -->
+        <button id="btn-precio-tienda" class="btn btn-precio-tienda">Precios productos</button>
+
+        <!-- Temporizador n-->
+        <div id="timer-container">
+            <div id="timer">00:30</div>
+            
+        </div>
+
+        <!-- Contenedor para la imagen de pagos -->
+        <div id="imagen-pagos-container" class="imagen-pagos-container">
+            <img id="imagen-pagos" src="img/pagos.gif" alt="Pagos" class="imagen-pagos">
+        </div>
+
+        <!-- Campo de ingreso de PIN -->
+        <div class="form-group">
+            <label for="pin-input"></label>
+            <input type="password" id="pin-input" class="input-pin" placeholder="Ingresa tu PIN">
+            <button id="btn-ingresar-pin" class="btn btn-ingresar-pin">Activar</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/temporizador.js"></script>
+</body>
+</html

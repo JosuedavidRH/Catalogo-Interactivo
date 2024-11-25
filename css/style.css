@@ -1,0 +1,219 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mensaje-bienvenida {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: 20px;
+    padding: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    color: white;
+    transition: background-color 0.3s, transform 0.1s;
+    outline: none;
+}
+
+.btn-comprar {
+    background-color: #28a745; /* Verde */
+  
+}
+
+.btn-precio-tienda {
+    background-color: #dc3545; /* Rojo */
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn.disabled {
+    background-color: #6c757d; /* Gris */
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.btn-desbloquear {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent; /* Color de fondo */
+    transition: background-color 0.3s, transform 0.1s;
+    outline: none;
+    position: fixed; /* Mantiene el botón en posición fija */
+    top: 20px; /* Distancia desde el borde superior */
+    right: 20px; /* Mueve el botón hacia la derecha */
+    transform: none; /* Sin transformaciones */
+    width: 50px; /* Tamaño del botón */
+    height: 25px; /* Altura del botón */
+}
+
+.btn-izquierda {
+    position: fixed; /* Asegura que esté en una posición fija en la pantalla */
+    left: 10px !important; /* Forzamos que se aplique el left */
+    transform: none !important; /* Asegura que no haya transformaciones afectando la posición */
+}
+
+.btn-derecha {
+    position: fixed; /* Asegura que esté en una posición fija en la pantalla */
+    right: 10px !important; /* Forzamos que se aplique el right */
+    transform: none !important; /* Elimina cualquier transformación previa */
+}
+
+.btn-desbloquear:hover {
+    background-color: transparent /* Ligeramente visible al pasar el ratón */
+    transform: scale(1.1);
+}
+
+/* Estilos para el temporizador */
+#timer-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#timer {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#startBtn,
+#resetBtn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* Sin bordes */
+    background-color: transparent; /* Fondo transparente */
+    color: white;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#startBtn:hover,
+#resetBtn:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Ligeramente visible al pasar el ratón */
+    transform: scale(1.1);
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered-content img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.imagen-pagos-container {
+    position: absolute; /* Posiciona el contenedor de la imagen en relación al contenedor padre */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Alinea la imagen en el centro exacto */
+    display: none; /* Oculta la imagen inicialmente */
+    z-index: 10; /* Asegura que la imagen esté por encima de los botones */
+}
+
+.imagen-pagos {
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 80%; /* Ajusta el tamaño máximo de la imagen */
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.mensaje-bienvenida {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.btn-comprar {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px; /* Aumenta el tamaño de la fuente */
+    padding: 15px 30px; /* Ajusta el padding si es necesario */
+    
+}
+.btn-precio-tienda{
+    background-color: red;
+    color: white;
+    font-size: 24px; /* Aumenta el tamaño de la fuente */
+    padding: 15px 30px; /* Ajusta el padding si es necesario */
+}
+.btn-ingresar-pin {
+    background-color: green;
+    color: white;
+    padding: 5px 10px; /* Disminuye el espacio interno del botón */
+    font-size: 14px; /* Reduce el tamaño del texto */
+    width: 100px; /* Establece un ancho fijo para el botón */
+    height: 30px; /* Establece una altura fija para el botón */
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+.input-pin {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+#timer-container {
+    margin: 20px 0;
+}
+
+#imagen-pagos-container {
+    margin-top: 20px;
+}
+
+.imagen-pagos {
+    width: 100%;
+    height: auto;
+}
+
